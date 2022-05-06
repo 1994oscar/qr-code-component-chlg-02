@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%; //10px
+}
+
+body{
+    box-sizing: border-box;
+    background-color: $light-gray;
+    height: 100vh;
+    width: auto;
+    font-family: $font-family;
+}
+
+.container{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution{
+    max-width: 100%;
+    margin-top: 2rem;
+    color: $grayish-blue;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    > a{
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+   /* @include media-query(280px, 374px){
+        margin: 5rem 1rem;
+        text-align: center;
+    }*/
+}
