@@ -27,6 +27,7 @@
             font-weight: 700;
             text-align: center;
             font-size: 1rem;
+            color: $primary-color; 
 
             @include media-min-max-query(360px, 400px){
                 font-size: 1.3rem;

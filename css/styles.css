@@ -87,7 +87,8 @@ body {
     .qr-box-body__title {
       font-weight: 700;
       text-align: center;
-      font-size: 1rem; }
+      font-size: 1rem;
+      color: #1f3251; }
       @media screen and (min-width: 360px) and (max-width: 400px) {
         .qr-box-body__title {
           font-size: 1.3rem; } }
