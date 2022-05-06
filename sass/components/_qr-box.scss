@@ -4,41 +4,48 @@
 
     &-header{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &__image{
             width: 100%;
             height: auto;
             border-radius: .5rem;
         }
+
+        
+        
     }
 
     &-body{
         margin-top: 1rem;
         margin-bottom: 2.5rem;
         width: 100%;
-
+       
         &__title{
             font-weight: 700;
             text-align: center;
             font-size: 1rem;
 
             @include media-min-max-query(360px, 400px){
-                font-size: 1.1rem;
-            }
-        
-            @include media-min-max-query(400px, 500px){
                 font-size: 1.3rem;
             }
         
+            @include media-min-max-query(400px, 500px){
+                font-size: 1.4rem;
+            }
+        
             @include media-min-max-query(500px, 700px){
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         
             @include media-min-max-query(700px, 900px){
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
         
-            @include media-min(900px){
-                font-size: 1.6rem;
+            @include media-min(900px){             
+                font-size: 1.5rem;
             }
         }
 
@@ -50,24 +57,61 @@
             color: $grayish-blue;
 
             @include media-min-max-query(360px, 400px){
-                font-size: .9rem;
+                font-size: 1rem;
+                padding: 0 .6rem;
+                margin-top: 1.2rem;
             }
         
             @include media-min-max-query(400px, 500px){
-                font-size: 1.2rem;
+                font-size: 1rem;
+                padding: 0 1rem;
             }
         
             @include media-min-max-query(500px, 700px){
-                font-size: 1.2rem;
+                font-size: 1rem;
+                padding: 0 1.1rem;
             }
         
             @include media-min-max-query(700px, 900px){
-                font-size: 1.2rem;
+                padding: 0 1.2rem;
+                font-size: 1rem;
             }
         
             @include media-min(900px){
-                font-size: 1.2rem;
+                padding: 0 1.2rem;
+                font-size: 1rem;
             }
+        }
+
+        /* BODY MEDIA QUERYS*/
+
+        @include media-min-max-query(360px, 400px){
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 0 .3rem;
+        }
+
+        @include media-min-max-query(400px, 500px){
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 0 .3rem;
+        }
+
+        @include media-min-max-query(500px, 700px){
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 0 .2rem;
+        }
+
+        @include media-min-max-query(700px, 900px){
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 0 .2rem;
+        }
+
+        @include media-min(900px){             
+            margin-top: 1.3rem;
+            margin-bottom: 2.5rem;
         }
     }
 }
